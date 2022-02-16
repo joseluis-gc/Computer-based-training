@@ -1,8 +1,8 @@
 <?php
-require_once "./classes/Upload.php";
-$upload = new Upload();
-$redirect =   implode(',',$upload->course_data);
-MessagesRedirect($upload, "page=upload_training&course_id=$redirect");
+require_once "./classes/Post.php";
+$post = new Post();
+$redirect =   implode(',',$post->course_data);
+MessagesRedirect($post, "page=upload_training&course_id=$redirect");
 ?>
 
 
