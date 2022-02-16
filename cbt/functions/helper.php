@@ -123,3 +123,4 @@ function MessagesRedirect($class, $redirect)
 function randomString(){
    return $uuid = Uuid::uuid4();
 }
+

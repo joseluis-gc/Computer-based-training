@@ -12,6 +12,7 @@ require_once("./config/settings.php");
 require_once("./config/db.php");
 
 require_once ("./functions/helper.php");
+require_once ("./functions/project_functions.php");
 
 require_once("./classes/Login.php");
 

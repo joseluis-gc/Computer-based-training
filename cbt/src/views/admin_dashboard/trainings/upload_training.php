@@ -1,4 +1,6 @@
-
+<?php
+$course_data = getCourseData($_GET['course_id'])
+?>
 <div class="container-fluid">
     <div class="row flex-nowrap">
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
@@ -9,7 +11,7 @@
                 <div class="card">
                     <form method="post" enctype="multipart/form-data">
                         <div class="row p-3">
-                            <h5 class="mt-4 mb-5">Upload training</h5>
+                            <h5 class="mt-4 mb-5">Upload training to <?php echo  $course_data[0] ?></h5>
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="formFile" class="form-label">Select file</label>
