@@ -18,7 +18,6 @@ require_once("./classes/Login.php");
 
 $login = new Login();
 
-
 if ($login->isUserLoggedIn() == true) {
     include("./src/views/logged_in.php");
 } else {

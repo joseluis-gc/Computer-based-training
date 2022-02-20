@@ -68,5 +68,27 @@
       </label>
     </div>
     <button class="w-100 btn btn-lg btn-danger" type="submit" name="login">Sign in</button>
+
+    
   </form>
+
+  <form class="form-signin" action="http://localhost/auth-global/public/request-authentication" method="get">
+    
+    <?php 
+
+    
+      $token = "" . randomString(); 
+      //$redirection = "http://localhost/Computer-based-training/cbt/login/";
+      $system = "System1";
+      $_SESSION['system'] = $system;
+      $_SESSION['token_auth'] = $token;
+      //$_SESSION['redirection'] = $redirection;
+    ?> 
+    <input  name="system" type="hidden" value="<?php echo $system ?>">
+    <input  name="token_auth" type="hidden" value="<?php echo $token ?>">
+    <!--<input  name="redirection" type="hidden" value="<?php echo $redirection ?>">-->
+    
+    <button class="w-100 btn btn-lg btn-info mt-4" type="submit" name="login">Sign in With Global Auth</button>
+  </form>
+
 </div>
